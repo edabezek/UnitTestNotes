@@ -1,0 +1,6 @@
+Unit Test 3 aþamadan oluþur 
+Arrange : Hazýrlýklarýmýzý yaptýðýmýz kýsým,deðiþken tanýmlarý 
+Act : Fonksiyonlarý çaðýrdýðýmýz kýsým
+Assert : Testimizin geçerli olup olmadýðýný belirleyen kýsým 
+
+Amacýmýz uygulamayý çalýþtýrmadan fonksiyonun doðruluðunu test etmek
