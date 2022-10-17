@@ -32,3 +32,13 @@ Class Level için ShoppingCardClassLevel uygulamasý :
 Assembly Level için AssemblyLevel uygulamasý :
 	-Bütün unit test projesi boyunca bir defalýk ilk olacak þekilde AssemblyInitialize çalýþýr,son olacak þekilde de AssemblyCleanup çalýþýr.
 	-AssemblyInitialize ve AssemblyCleanup projede 1 tane olur, hangi class'a yazdýðýmýz önemli deðildir.
+
+Expected Exception
+	-Testlerin geçebilmesi için uygulama içinde olabilecek hatalarý bilmesi gerekiyor.
+	-Hata oluþmalý ama test'ten geçmiyor,bu durumda kullanýrýz.Metoda beklediðimiz hata tipini veririz.Burada birebir tiplere bakar , baþka ex 
+	tiplerini de geçerli kýlmak için AllowDerivedTypes=true eklenir.
+
+Asserting 
+	Assert : Compare two values,many methods with several overloads
+	CollectionAssert : Compare two values,check items in collection
+	StringAssert : Compare strings
