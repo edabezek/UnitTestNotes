@@ -4,3 +4,31 @@ Act : Fonksiyonlarý çaðýrdýðýmýz kýsým
 Assert : Testimizin geçerli olup olmadýðýný belirleyen kýsým 
 
 Amacýmýz uygulamayý çalýþtýrmadan fonksiyonun doðruluðunu test etmek
+
+Testing Lifecyle(Initialize and cleanup)
+Test Level
+Class Level
+Assembly Level
+
+Test Level için ShoppingCard uygulamasý :
+	-Her test metodundan önce ve sonra iþlemler yapabiliriz,bunlar için TestInitialize ve TestCleanUp kullanabiliriz.
+	-Product ,ürünleri 
+	-CardItem,sepete ekleyeceðimiz sýnýfý temsil eder
+	-Sepete ,ekleme ,silme iþlemlerini gerçekleþtirecek sýnýf CardManager
+	-Sepet için bilgileri session'da tutacaðýz, db baðlantýsý olmayacak
+	-CardTest için 3 tane test oluþturduk,
+	-TestInitialize , tekrar eden metodlarýn olmamasý için, her test edilecek metottan önce çalýþacak bir genel metod oluþturmak demek.Her test 
+	metodunun ortak çalýþan kodlarýný bu metoda yazarýz.CardTests için yazdýðýmýz metotlarý CardTestsTestLevel'de yaptýk.
+	-Her testten önce TestInitialize çalýþacak ve sepete bir tane ürün ekleyecek.
+	-TestCleanup ,her test metodundan sonra çalýþacak olan metot
+
+
+Class Level için ShoppingCardClassLevel uygulamasý :
+	-Önce TestInitialize çalýþýr,sonra sýrasýyla test metotlarý,son olarak class cleanup metodu çalýþýr.
+	-ClassInitialize ve ClassCleanup statik olmak zorunda,herhangi bir deðer return edemezler.Ayný zamanda ClassInitialize TestContext tipinde
+	bir parametre almalýdýr.
+	-ClassInitialize ve ClassCleanup her test class'da birer tane olur.
+
+Assembly Level için AssemblyLevel uygulamasý :
+	-Bütün unit test projesi boyunca bir defalýk ilk olacak þekilde AssemblyInitialize çalýþýr,son olacak þekilde de AssemblyCleanup çalýþýr.
+	-AssemblyInitialize ve AssemblyCleanup projede 1 tane olur, hangi class'a yazdýðýmýz önemli deðildir.
