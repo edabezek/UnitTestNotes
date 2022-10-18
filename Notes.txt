@@ -42,3 +42,31 @@ Asserting
 	Assert : Compare two values,many methods with several overloads
 	CollectionAssert : Compare two values,check items in collection
 	StringAssert : Compare strings
+
+TestContext : 
+	-Uygulama içerisinde,çalýþma anýnda bilgi veren nensedir.
+	-Testin adýný,birimini almak ,
+	-Web servisi test ettiðimizde ,web servisle ilgili url bilgileri,durumu bilgisini almak 
+	-Web forms uygulamasýný test ettiðimizde page nesnesini almak,
+	-Data-driven test yönteminde her bir veriyi elde etmek için kullanýlýr.
+
+Data-Driven Unit Test
+	-Microsot'un test framework'ü ile veri temelli birim testleri oluþurabiliyoruz.
+	-Veri temelli birim testleri , kullanýlan kaynaktaki her satýr için birim testinin otomatik çalýþtýrýlmasý esasýna dayalýdýr.
+	-Kaynak olarak veritabaný,excel, vs olabilir
+	-Ayný birim testini dinamik deðerlerle test etmek için kullanýlýr.
+	-Diðer kullanýmý, veritabanýna veri import etmek istediðimizde kullanýrýz.Örneðin excel dosyasýný veritabanýna import etmemiz gerekiyor diyelim.
+	Fakat excel'deki veriler bizim istediðimiz formata uygun mu (email formatý vs) , bunu veritabanýna import etmeden kontrol etmek zor bu yüzden
+	bizim iþ kurallarýmýza göre test etmeliyiz.
+	-Burada her satýrdaki veriyi yakalamak için TestContext nesnesini kullanýrýz.
+
+DataDrivenUnitTest Proje Detaylarý 
+	-Kaynak olarak elimizde xml veri seti var,bunlarý database'e kaydetmeden önce iþ kuralýna uygunluðunu test edeceðiz.
+	-Configürasyon olarak kod yazacaðýz.
+	-Businnes layer'da Kullanýcý için kurallar yazdýk.
+	-xml dosyasýný bin/debug altýna gelmesi için properties'den kopyalanabilir olmasýný deðiþtirdik.
+
+	-Kaynak olarak veritabanýný kullanacaðýz,configürasyon için xml dosyasý tercih edeceðiz.
+	-Burada veriler testin geçip geçmeyeceðine karar veren deðerler olacak.
+	-Businnes Layer'da, ÝslemManager'da bir formülümüz var bunun çalýþýp çalýþmadýðýný kontrol edeceðiz.
+	-SQl'de Demo db ve Sayýlar tablosu oluþturduk.(kolonlar : x,y,beklenen)
