@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpectedException.Test", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asserts.Test", "Asserts.Test\Asserts.Test.csproj", "{72174F29-ED3C-4A0F-972C-5F5202959E25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssertsCollection", "AssertsCollection\AssertsCollection.csproj", "{3C3EF25A-5467-41F3-877B-E1B54AF32C59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,10 @@ Global
 		{72174F29-ED3C-4A0F-972C-5F5202959E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72174F29-ED3C-4A0F-972C-5F5202959E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72174F29-ED3C-4A0F-972C-5F5202959E25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C3EF25A-5467-41F3-877B-E1B54AF32C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3EF25A-5467-41F3-877B-E1B54AF32C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C3EF25A-5467-41F3-877B-E1B54AF32C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C3EF25A-5467-41F3-877B-E1B54AF32C59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
