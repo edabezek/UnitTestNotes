@@ -1,4 +1,4 @@
-# Test Çeşitleri :
+# :seedling: Test Çeşitleri : 
 
 **1. Unit Test :** Metot testidir. 
 
@@ -116,9 +116,9 @@
 
 # Test First Development
 
-	**Kırmızı :** Hata verecek bir test yazılır
-	**Yeşil :** Testi geçecek en basit kod yazılır
-	**Refactor :** Test'i geçebilecek kod yazılır.
+	Kırmızı : Hata verecek bir test yazılır
+	Yeşil : Testi geçecek en basit kod yazılır
+	Refactor : Test'i geçebilecek kod yazılır.
   
   
 # Conclusion
