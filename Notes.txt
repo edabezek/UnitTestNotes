@@ -102,7 +102,7 @@ Conclusion
 
 	Karþýlaþabileceðimiz hatalardan biri unit test'in integration test olmasý.En büyük nedeni yanlýþ yazýlým tasarýmý kullanýlmasý.
 	Eðer geliþtirdiðimiz uygulama Solid'e uygunsa nesneldir,testlerimizi uygulamamýz kolay olur.
-	Mock, test konseptinde sahte (fake) object üretmektir. Faydasý Unit Test’in temel kurallarýndan olan Test In Isolation
+	Mock, test konseptinde sahte object üretmektir. Faydasý Unit Test’in temel kurallarýndan olan Test In Isolation
 	prensibini karmaþýk yapýlara uygulayabilmemizdir.
 
 Test First Development
